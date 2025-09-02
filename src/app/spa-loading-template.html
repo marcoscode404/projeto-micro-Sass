@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<body>
+    <style>
+        body {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translatey(0)
+            }
+
+            50% {
+                transform: translatey(-20px)
+            }
+        }
+
+        .efeito-flutuante-infinito {
+            display: flex;
+            align-items: center;
+            border: 1px solid rgb(250, 21, 5);
+            border-radius: 50%;
+            padding: 7px;
+            animation: float 2.5s ease-in-out infinite;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 50px 20px -7px;
+        }
+    </style>
+
+    <div class="efeito-flutuante-infinito">
+        <svg viewBox="0 0 65.223 34.53" width="42" height="40">
+            <g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#ff0000"
+                stroke-width="0.35mm" fill="#ff0000" style="stroke:#ff0000;stroke-width:0.35mm;fill:#ff0000">
+                <path
+                    d="M 1.35 0.614 L 11.4 0.614 L 19.9 23.214 L 20 23.214 L 28.55 0.614 L 38.45 0.614 L 38.45 4.664 L 36.8 4.814 A 1.462 1.462 0 0 0 35.348 6.462 A 3.257 3.257 0 0 0 35.35 6.564 L 36.6 29.464 L 39.7 29.614 L 39.7 33.864 L 27.65 33.864 L 27.65 29.814 L 29.45 29.664 A 1.171 1.171 0 0 0 30.752 28.448 A 2.026 2.026 0 0 0 30.75 28.364 L 29.8 10.714 L 29.7 10.714 L 22 30.664 L 17.25 30.664 L 9.65 10.914 L 9.55 10.914 L 8.55 29.464 L 11.8 29.614 L 11.8 33.864 L 0 33.864 L 0 29.814 L 1.8 29.664 Q 2.95 29.564 3.05 28.314 L 4.4 5.064 L 1.35 4.864 L 1.35 0.614 Z M 63.85 2.064 L 63.85 9.564 L 58.75 9.914 L 58.75 7.014 Q 58.75 6.264 58.55 5.914 Q 58 4.964 55.025 4.964 Q 52.05 4.964 50.625 6.014 Q 49.2 7.064 49.2 9.264 Q 49.2 10.864 50.4 12.064 Q 51.2 12.864 52.775 13.389 Q 54.35 13.914 56.125 14.464 Q 57.9 15.014 59.275 15.664 Q 60.65 16.314 62.15 17.464 Q 65.2 19.714 65.2 24.414 Q 65.2 29.114 61.825 31.814 Q 58.45 34.514 52.925 34.514 Q 47.4 34.514 43 32.464 L 43 24.564 L 48.1 24.214 L 48.1 27.264 Q 48.1 28.014 48.3 28.364 Q 48.5 28.714 49.525 29.039 Q 50.55 29.364 52.75 29.364 Q 58.75 29.364 58.75 24.564 Q 58.75 22.064 56.1 20.864 Q 54.7 20.164 52.475 19.564 Q 50.25 18.964 48.775 18.339 Q 47.3 17.714 45.8 16.614 Q 42.85 14.414 42.85 9.839 Q 42.85 5.264 46.025 2.639 Q 49.2 0.014 54.325 0.014 Q 59.45 0.014 63.85 2.064 Z"
+                    vector-effect="non-scaling-stroke" />
+            </g>
+        </svg>
+    </div>
+
+</body>
+
+</html>

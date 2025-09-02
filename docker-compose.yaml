@@ -1,0 +1,8 @@
+services:
+  front:
+    ports:
+      - 3000:80
+    build: .
+    image: registry.modenaesilva.com.br/prototipo-maps
+    env_file:
+      - .env

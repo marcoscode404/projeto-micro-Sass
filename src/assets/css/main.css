@@ -1,0 +1,58 @@
+@import 'tailwindcss' theme(static);
+@import "@nuxt/ui";
+
+@theme {
+  --font-*: initial;
+  --font-body: 'Open Sans';
+
+  --color-ms-dark-bg-secondary: #1C1917;
+  --color-ms-red600: #dc2626;
+  --color-ms-red500: #ff4842;
+  --color-ms-red100: #ffe7d9;
+  --color-ms-blue500: #3b82f6;
+  --color-ms-cyan500: #1890ff;
+  --color-ms-cyan50: #d0f2ff;
+  --color-ms-teal800: #01534a;
+  --color-ms-green800: #166534;
+  --color-ms-green600: #00ab55;
+  --color-ms-green500: #22c55e;
+  --color-ms-green100: #c8facd;
+  --color-ms-orange500: #f97316;
+  --color-ms-gray300: #9ca3af;
+  --color-ms-gray200: #b9b9b9;
+  --color-ms-skay400: #4dc4fc;
+  --color-ms-skay500: #3cb3e7;
+  --color-ms-slate950: #0f1114;
+  --color-ms-dark-grey: #1a1a1a;
+  --color-ms-dark-grey500: #181b1f;
+  --color-ms-dark-grey550: #27272a;
+  --color-ms-dark-grey600: #24272d;
+  --color-ms-jet-black: #141517;
+  --color-ms-jet-black800: #171717;
+  --color-ms-dark-hover: #333336;
+  --color-ms-pure-black: #181b1f63;
+  --color-ms-brown: #333338;
+  --color-ms-dark-header: #29292e;
+
+  --breakpoint-desktop: 1370px;
+  --breakpoint-desktop_big_screen: 1760px;
+  --breakpoint-device: 340px;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
