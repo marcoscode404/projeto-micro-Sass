@@ -1,9 +1,4 @@
 <script lang="ts" setup>
-
-// const items = [
-//   'https://picsum.photos/468/468?random=2',
-//   'https://picsum.photos/468/468?random=3',
-// ]
 </script>
 
 <template>
@@ -73,7 +68,7 @@
                     </div>
 
                     <div>
-                        <button type="submit"
+                        <button type="submit" @click="navigateTo('/dashboard')"
                             class="w-full flex justify-center cursor-pointer py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium
                              text-white bg-orange-600 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors">
                             Entrar
