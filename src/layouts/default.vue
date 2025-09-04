@@ -1,4 +1,6 @@
 <script setup>
+const router = useRouter();
+
 const isSidebarOpen = ref(false)
 
 function toggleSidebar() {
@@ -17,7 +19,7 @@ const navigationItems = [
 </script>
 
 <template>
-    <header class="bg-white dark:bg-black shadow-md p-2 flex items-center justify-between md:justify-end sticky top-0 z-20">
+    <header class="bg-white dark:bg-ms-dark-grey shadow-md p-2 flex items-center justify-between md:justify-end sticky top-0 z-20">
         <button id="open-sidebar" class="md:hidden text-gray-600">
             <i data-lucide="menu"></i>
         </button>
@@ -43,11 +45,11 @@ const navigationItems = [
     <div class="flex flex-1 w-full">
         <!-- Sidebar -->
         <aside :class="[
-            'bg-gray-800 dark:bg-black text-white w-64 fixed inset-y-0 left-0 z-30 -mt-15 transform transition-transform duration-300 flex flex-col h-screen',
+            'bg-ms-jet-black text-white w-64 fixed inset-y-0 left-0 z-30 -mt-15 transform transition-transform duration-300 flex flex-col h-screen',
             isSidebarOpen ? 'translate-x-0' : '-translate-x-full',
             'md:relative md:translate-x-0 md:flex-shrink-0'
         ]">
-            <div class="flex items-center justify-between p-4 border-b border-gray-700">
+            <div class="flex items-center justify-between p-3.5 border-b border-gray-700">
                 <h1 class="text-2xl font-bold text-white">QuadraFlex</h1>
                 <button class="md:hidden text-white" @click="toggleSidebar">
                     <X class="w-6 h-6" />
@@ -56,13 +58,14 @@ const navigationItems = [
 
             <nav class="flex-1 p-4 space-y-2">
                 <a v-for="item in navigationItems" :key="item.name"  @click="() => { navigateTo(item.href)}"
-                    class="flex items-center px-4 py-2 cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white rounded-lg">
+                    class="flex items-center px-4 py-2 cursor-pointer text-gray-300 hover:bg-gray-700 hover:text-white rounded-lg"
+                    :class="{'bg-gray-700 text-white': router.currentRoute.value.path === item.href }">
                     <Icon :name="item.icon" class="w-5 h-5 mr-3" /> {{ item.name }}
                 </a>
             </nav>
 
             <div class="p-4 border-t border-gray-700">
-                <a href="#" class="flex items-center px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white rounded-lg">
+                <a href="https://marcos.modenaesilva.com.br" class="flex items-center px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white rounded-lg">
                     <Icon name="ms:logout" class="w-5 h-5 mr-3" /> Sair
                 </a>
             </div>
