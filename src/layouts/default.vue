@@ -17,7 +17,7 @@ const navigationItems = [
 </script>
 
 <template>
-    <header class="bg-white shadow-md p-2 flex items-center justify-between md:justify-end sticky top-0 z-20">
+    <header class="bg-white dark:bg-black shadow-md p-2 flex items-center justify-between md:justify-end sticky top-0 z-20">
         <button id="open-sidebar" class="md:hidden text-gray-600">
             <i data-lucide="menu"></i>
         </button>
@@ -25,6 +25,9 @@ const navigationItems = [
             <button class="text-gray-500 hover:text-gray-700">
                 <i data-lucide="bell" class="w-6 h-6"></i>
             </button>
+        
+            <GlobalButtonDarkMode />
+
             <div class="flex items-center">
                 <img src="https://placehold.co/40x40/E2E8F0/4A5568?text=MV" alt="Avatar do usuário"
                     class="w-10 h-10 rounded-full mr-2">
@@ -32,6 +35,7 @@ const navigationItems = [
                     <div class="font-semibold">Marcos Vini</div>
                     <div class="text-sm text-gray-500">Dono da Quadra</div>
                 </div>
+
             </div>
         </div>
     </header>
@@ -39,7 +43,7 @@ const navigationItems = [
     <div class="flex flex-1 w-full">
         <!-- Sidebar -->
         <aside :class="[
-            'bg-gray-800 text-white w-64 fixed inset-y-0 left-0 z-30 -mt-15 transform transition-transform duration-300 flex flex-col h-screen',
+            'bg-gray-800 dark:bg-black text-white w-64 fixed inset-y-0 left-0 z-30 -mt-15 transform transition-transform duration-300 flex flex-col h-screen',
             isSidebarOpen ? 'translate-x-0' : '-translate-x-full',
             'md:relative md:translate-x-0 md:flex-shrink-0'
         ]">
