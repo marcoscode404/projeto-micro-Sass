@@ -9,10 +9,10 @@ function toggleSidebar() {
 
 const navigationItems = [
     { name: 'Dashboard', icon: 'ms:dashboard', href: '/dashboard' },
-    { name: 'Agenda', icon: 'Calendar', href: '/agenda' },
-    { name: 'Vendas (PDV)', icon: 'ShoppingCart', href: 'vendas' },
-    { name: 'Clientes', icon: 'Users', href: '/clientes' },
-    { name: 'Financeiro', icon: 'BarChart2', href: '/financeiro' },
+    { name: 'Agenda', icon: 'ms:schedule', href: '/agenda' },
+    { name: 'Vendas (PDV)', icon: 'ms:sales', href: 'vendas' },
+    { name: 'Clientes', icon: 'ms:clients', href: '/clientes' },
+    { name: 'Financeiro', icon: 'ms:money', href: '/financeiro' },
     { name: 'Configurações', icon: 'ms:config', href: '/configs' },
 ]
 
@@ -27,7 +27,9 @@ const navigationItems = [
             <button class="text-gray-500 hover:text-gray-700">
                 <i data-lucide="bell" class="w-6 h-6"></i>
             </button>
-        
+            
+            <ModalListIcons />
+
             <GlobalButtonDarkMode />
 
             <div class="flex items-center">

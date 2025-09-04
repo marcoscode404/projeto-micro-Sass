@@ -23,7 +23,7 @@ definePageMeta({ layout: false })
                   </UCarousel> -->
              </div>
 
-             <div class="relative z-10 flex flex-col justify-center items-center  w-full p-12 text-black">
+             <div class="relative z-10 flex flex-col justify-end items-center  w-full p-12 text-black">
                 <h1 class="text-4xl lg:text-5xl font-bold mb-4 leading-tight">Gerencie sua quadra de forma simples e eficiente.</h1>
                 <p class="text-lg lg:text-xl">Todos os seus agendamentos, vendas e clientes em um só lugar.</p>
              </div>

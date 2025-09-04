@@ -144,6 +144,18 @@ const customIcons = {
       body: '<path fill="currentColor" d="M12 6A6 6 0 1 1 0 6a6 6 0 0 1 12 0m-1.5 0a4.5 4.5 0 0 0-.832-2.607L3.393 9.668A4.5 4.5 0 0 0 10.5 6M8.607 2.332a4.5 4.5 0 0 0-6.275 6.275z"/>',
       width: 15, height: 15, viewBox: '0 0 23 23'
     },
+    clients: {
+      body: '<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 19v-1.25C13 15.679 11.081 14 8.714 14H7.286C4.919 14 3 15.679 3 17.75V19m12.286-5h1.428C19.081 14 21 15.679 21 17.75V19M15 5.17a3 3 0 1 1 0 5.659M11 8a3 3 0 1 1-6 0a3 3 0 0 1 6 0"/>',
+      width: 25, height: 25, viewBox: '0 0 30 30'
+    },
+    sales: {
+      body: '<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M14 9.846c-1-.923-3.667-1.23-3.667.616S14 11.385 14 13.23s-3 1.846-4 .615m2 .857V16m0-6.887V8M2 8l9.732-4.866a.6.6 0 0 1 .536 0L22 8"/><path d="M20 11v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8"/></g>',
+      width: 25, height: 25, viewBox: '0 0 25 25'
+    },
+    schedule: {
+      body: '<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="4"><rect width="40" height="30" x="4" y="10" stroke-linejoin="round" rx="2"/><path d="M14 6v8m11 9H14m20 8H14M34 6v8"/></g>',
+      width: 50, height: 50, viewBox: '0 0 40 40'
+    },
   },
 };
 
